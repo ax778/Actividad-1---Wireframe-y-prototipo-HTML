@@ -3,40 +3,75 @@
 <head>
     <title>Viajes alrededor del mundo</title>
     <style>
-        /* Estilo para la imagen */
+        /* Estilo para el imagen */
         img {
             max-width: 800px; /* Establece el ancho máximo de la imagen */
             height: auto; /* Mantiene la proporción original de la imagen */
+            display: block; /* Hace que la imagen se comporte como un bloque para aplicar márgenes automáticos */
+            margin-left: auto; /* Centra la imagen horizontalmente */
+            margin-right: auto; /* Centra la imagen horizontalmente */
         }
 
-        /* Estilo para la descripción */
-        .descripcion {
-            font-size: 16px;
-            margin-top: 10px; /* Espacio superior */
+        /* Estilo para el menú de navegación horizontal */
+        ul {
+            list-style-type: none; /* Elimina las viñetas de la lista */
+            position: absolute; /* Permite que el menú sea posicionado de forma absoluta */
+            top: 10px; /* Alinea el menú con la parte superior */
+            right: 10px; /* Alinea el menú con la derecha */
+        }
+
+        ul li {
+            display: inline; /* Hace que los elementos de la lista se muestren en línea (horizontalmente) */
+            margin-right: 20px; /* Espacio entre elementos de la lista */
+        }
+
+        /* Estilo para el encabezado h1 */
+        h1 {
+            font-size: 36px; /* Aumenta el tamaño del texto del encabezado h1 */
+        }
+
+        /* Estilo para el footer */
+        footer {
+            text-align: center; /* Alinea el texto en el centro */
+            margin-top: 20px; /* Espacio superior */
+            background-color: #f2f2f2; /* Color de fondo */
+            padding: 10px; /* Espaciado interno */
+        }
+
+        /* Estilo para el nuevo párrafo "SOBRE LA EMPRESA" */
+        p.sobre-empresa {
+            text-align: center; /* Alinea el texto en el centro */
+            font-size: 24px; /* Tamaño de fuente más grande que el texto "Inicio" */
+        }
+
+        /* Estilo para el nuevo párrafo de la empresa */
+        p.nuestra-empresa {
+            text-align: center; /* Alinea el texto en el centro */
+            font-size: 18px; /* Tamaño de fuente para el texto de la empresa */
+            margin-top: 20px; /* Espacio superior */
         }
     </style>
 </head>
 <body>
     <header>
-        <!-- Menú de navegación -->
+        <!-- Menú de navegación horizontal -->
         <ul>
             <li><a href="main.html">Inicio</a></li>
             <li><a href="destinos.html">Destinos Populares</a></li>
             <li><a href="consejos.html">Consejos de Viaje</a></li>
             <li><a href="contacto.html">Contacto</a></li>
-            <li><a href="cuenta.html">Contacto</a></li>
         </ul>
     </header>
     <section>
         <!-- Contenido de la página de inicio -->
-        <h1>Bienvenido a nuestro sitio web de viajes</h1>
-        <p>Descubre los destinos más emocionantes alrededor del mundo.</p>
+        <h1>Inicio</h1>
         <img src="imag/1366_2000.jpeg" alt="Este coche es un Nissan GTR, de color azul">
-        <p class="descripcion">Nissan Skyline: Este coche es un Nissan GTR de color azul. Es un automóvil deportivo de alta gama conocido por su potencia y rendimiento excepcionales.</p>
+        <p class="sobre-empresa">SOBRE LA EMPRESA</p>
+        <p class="nuestra-empresa">Nuestra empresa de coches se enorgullece de ofrecer una amplia gama de automóviles, incluyendo modelos icónicos como el Nissan Skyline. Nos esforzamos por brindar a nuestros clientes vehículos de alta calidad que combinan rendimiento, seguridad y estilo. Nuestro compromiso es satisfacer las necesidades de los entusiastas de los automóviles y conductores que buscan una experiencia de conducción excepcional.</p>
     </section>
     <footer>
         <!-- Información de contacto y pie de página -->
+        © Practica | Diseñado: Axel Olivares y David Joan | <a href="aviso_legal.html">Aviso legal</a> · <a href="politica_privacidad.html">Política de Privacidad</a>
     </footer>
 </body>
 </html>
-
